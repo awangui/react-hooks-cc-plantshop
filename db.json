@@ -41,6 +41,12 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Green plant",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHQA8Vxq8loYU7uv-bCQd1iLdgzxkH03OW4Q&s",
+      "price": 68.99,
+      "id": 8
     }
   ]
 }
