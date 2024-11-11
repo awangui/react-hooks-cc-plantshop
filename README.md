@@ -1,46 +1,41 @@
-# Phase 2 Code Challenge: Plantsy
+# Plantsy Admin Dashboard
 
 ## Demo
 
-Use this gif as an example of how the app should work.
+Explore how Plantsy works with this GIF showcasing the app's core functionality.
 
 ![Demo GIF](https://curriculum-content.s3.amazonaws.com/phase-2/react-hooks-mock-code-challenge-plantshop/plantsy_demo.gif)
 
-## Instructions
+## Overview
 
-Welcome to Plantsy! You've been tasked with building out some features for the
-admin side of a plant store. The designers have put together the components and
-CSS. Now it's up to you to bring the features to life by adding stateful logic
-as well as persisting data to the backend via our API.
-
-Your job will be to make our app work according to the user stories you will
-find the [Core Deliverables](#Core-Deliverables) section.
+Welcome to Plantsy, a project focused on the admin side of a plant store. This dashboard allows users to manage plant inventory, including adding, updating, and filtering plant items. The app is powered by React, with a backend API to handle data persistence.
 
 ## Setup
 
-1. Run `npm install` in your terminal.
-2. Run `npm run server`. This will run your backend on port `6001`.
-3. In a new terminal, run `npm start`.
+1. Run `npm install` to install dependencies.
+2. Start the backend with `npm run server` (runs on port `6001`).
+3. Open a new terminal and start the frontend with `npm start`.
 
-Make sure to open [http://localhost:6001/plants](http://localhost:6001/plants)
-in the browser to verify that your backend is working before you proceed!
+Verify that the backend is running by visiting [http://localhost:6001/plants](http://localhost:6001/plants) in your browser.
 
-## Endpoints
+## API Endpoints
 
-The base URL for your backend is: `http://localhost:6001`
+Base URL for the backend: `http://localhost:6001`
 
-## Core Deliverables
+## Features
 
-As a user:
+Plantsy supports the following features:
 
-1. When the app starts, I can see all plants.
-2. I can add a new plant to the page by submitting the form.
-3. I can mark a plant as "sold out".
-4. I can search for plants by their name and see a filtered list of plants.
+1. **View All Plants**: Display a list of all available plants upon loading the app.
+2. **Add New Plant**: Add a new plant to the inventory by submitting a form.
+3. **Mark Plant as Sold Out**: Update plant status to "sold out."
+4. **Search Plants**: Filter plants by name to easily find specific items.
 
-### Endpoints for Core Deliverables
+### Core Endpoints
 
-#### GET /plants
+#### GET `/plants`
+
+Retrieves the list of all plants.
 
 Example Response:
 
@@ -63,7 +58,9 @@ Example Response:
 
 #### POST `/plants`
 
-Required Headers:
+Adds a new plant to the inventory.
+
+Headers:
 
 ```js
 {
@@ -71,7 +68,7 @@ Required Headers:
 }
 ```
 
-Request Object:
+Request Body:
 
 ```json
 {
@@ -91,60 +88,6 @@ Example Response:
   "price": 15.99
 }
 ```
+---
 
-## Advanced Deliverables
-
-These deliverables are not required to pass the code challenge, but if you have
-the extra time, or even after the code challenge, they are a great way to
-stretch your skills.
-
-You'll have to add additional elements for these features. Feel free to style
-them however you see fit!
-
-> Note: If you are going to attempt these advanced deliverables, please be sure
-> to have a working commit with all the Core Deliverables first!
-
-As a user:
-
-1. I can update the price of a plant and still see the updated price after
-   refreshing the page.
-2. I can delete a plant and it is still gone when I refresh the page.
-
-### Endpoints for Advanced Deliverables
-
-#### PATCH /plants/:id
-
-Required Headers:
-
-```js
-{
-  "Content-Type": "application/json"
-}
-```
-
-Request Object:
-
-```json
-{
-  "price": number
-}
-```
-
-Example Response:
-
-```json
-{
-  "id": 1,
-  "name": "Aloe",
-  "image": "./images/aloe.jpg",
-  "price": 16.99
-}
-```
-
-#### DELETE /plants/:id
-
-Example Response:
-
-```json
-{}
-```
+Plantsy provides a streamlined and user-friendly experience for managing plant inventory, making it a valuable tool for plant store administrators.
