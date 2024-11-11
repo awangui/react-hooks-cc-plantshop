@@ -10,6 +10,9 @@ Explore how Plantsy works with this GIF showcasing the app's core functionality.
 
 Welcome to Plantsy, a project focused on the admin side of a plant store. This dashboard allows users to manage plant inventory, including adding, updating, and filtering plant items. The app is powered by React, with a backend API to handle data persistence.
 
+## Live Demo
+`https://plantsyy.netlify.app/`
+
 ## Setup
 
 1. Run `npm install` to install dependencies.
