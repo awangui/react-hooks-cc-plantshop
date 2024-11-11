@@ -91,3 +91,5 @@ Example Response:
 ---
 
 Plantsy provides a streamlined and user-friendly experience for managing plant inventory, making it a valuable tool for plant store administrators.
+
+Made with 🤍 by `https://github.com/awangui/`
