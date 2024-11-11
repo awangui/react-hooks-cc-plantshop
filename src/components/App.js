@@ -5,7 +5,6 @@ import PlantPage from "./PlantPage";
 function App() {
   const [plants, setPlants] = useState([]);
 
-  // Fetch plants from the backend on component mount
   useEffect(() => {
     fetch("http://localhost:6001/plants")
       .then((response) => response.json())
